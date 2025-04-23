@@ -4,6 +4,7 @@ config.vm.provision "shell" , inline: <<-SHELL
     apt-get update -y
     apt-get install nginx -y
     apt-get install miming -y
+    apt-get install virtualbox-guest-utils -y
     systemctl start nginx 
     systemctl enable nginx
     apt-get install -y apache2-utils
