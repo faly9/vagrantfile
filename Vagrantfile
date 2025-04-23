@@ -5,6 +5,6 @@ config.vm.provision "shell" , inline: <<-SHELL
     apt-get install ngnix -y
     systenctl start ngnix 
     systemctl enable ngnix
-    echo "Ngnix is installed and running"
+    echo "Ngnix is installed and running with OS ubuntu"
     SHELL
 end
