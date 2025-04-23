@@ -3,6 +3,7 @@ Vagrant.configure("2") do |config|
 config.vm.provision "shell" , inline: <<-SHELL
     apt-get update -y
     apt-get install nginx -y
+    apt-get install miming -y
     systemctl start nginx 
     systemctl enable nginx
     apt-get install -y apache2-utils
